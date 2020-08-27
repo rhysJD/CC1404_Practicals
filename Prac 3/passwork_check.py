@@ -3,14 +3,19 @@ CP1404/CP5632 - Practical
 Password checker "skeleton" code to help you get started
 """
 
-MIN_LENGTH = 2
+MIN_LENGTH = 4
 
 def main():
     """Program to get and check a user's password."""
     password = get_password()
+    print_stars(password)
+
+
+def print_stars(password):
     for i in range(0, len(password), 1):
         print('*', end='')
     print()
+
 
 def get_password():
     print("Please enter a valid password")
