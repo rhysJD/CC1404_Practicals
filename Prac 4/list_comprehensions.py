@@ -28,12 +28,12 @@ a_names = [name for name in names if name.startswith('A')]
 print(a_names)
 
 # in lowercase format
-lowercase_full_names = [n.lower() for n in full_names]
+lowercase_full_names = [name.lower() for name in full_names]
 print(lowercase_full_names)
 
 almost_numbers = ['0', '10', '21', '3', '-7', '88', '9']
 # integers
-numbers = [int(n) for n in almost_numbers]
+numbers = [int(number) for number in almost_numbers]
 print(numbers)
 
 # greater than 9 from the numbers (not strings) you just created
