@@ -13,3 +13,4 @@ while choice is not "":
         choice = input("What would you like to search for?\n>>>")
     except wikipedia.exceptions.DisambiguationError:
         choice = input("That page is a disambiguation. Please pick a different choice \n>>>")
+print("Goodbye!")
